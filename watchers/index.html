@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>Les watchers</title>
+</head>
+    <body>
+        <h1>Les watchers</h1>
+            <div id="monApp">
+                    <button v-on:click="leNombre++" type="button">+</button>
+                    <p>{{leNombre}}</p>
+                    <br><br>
+                    <button v-on:click="leMoins--" type="button">+</button>
+                    <p>{{myString}}</p>
+            </div>
+            <!-- script pour contacter VUE -->
+            <script src="https://unpkg.com/vue@next"></script>
+            <script src="index.js"></script>
+    </body>
+</html>
