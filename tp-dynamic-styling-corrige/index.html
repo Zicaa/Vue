@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+    />
+    <title>Tp-dynamic-styling</title>
+    <style>
+       .maClasseHello {
+            background-color: mediumslateblue;
+            color:aliceblue;
+        }
+        .maClasseWorld {
+            background-color: mediumspringgreen;
+            color:aliceblue;
+        }
+        .maClasseVisible {
+            display: block;
+        }
+        .maClasseHidden {
+            display: none;
+        }
+        .maClasseRedBack{
+            background-color: red;
+            color:aliceblue;
+        }
+        .maClasseGreenBack{
+            background-color: green;
+            color:aliceblue;
+        }
+        .maClasseYellowBack{
+            background-color: yellow;
+            color:green;
+        }
+        .maClasseBlackBack{
+            background-color: black;
+            color:whitesmoke;
+        }
+    </style>
+</head>
+
+    <body>
+        <!--Titre de la page-->
+        <h1 class="text-center">Tp-dynamic-styling</h1>
+        <div id="monApp">
+            <div class="m-3">
+                <div>
+                    <input v-model="className" type="text" class="form-control/">
+                    <h1 :class="classDyn" class="form-label mt-1">
+                        Hello World
+                    </h1>
+                </div>
+            </div>
+            <div class="m-3">
+                <div>
+                    <input v-model="colorName" type="text" class="form-control/">
+                    <h1 :class="colorBack" class="form-label mt-1">
+                        Red
+                    </h1>
+                </div>
+            </div>
+            <button v-model="paraHidden" class="btn btn-info">Afficher</button>
+            </div>
+        </div>
+
+    <!-- script pour contacter VUE -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"
+    </script>
+    </body>
+</html>
